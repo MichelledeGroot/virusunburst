@@ -4,7 +4,7 @@
 #' taxonomy and total reads
 #'
 #' @param csv_file Path to the input file
-#' @import plotme
+#' @import yogevherz/plotme
 #' @import dplyr
 #' @export
 make_sunburst <- function(csv_file, size_col="Total_reads"){

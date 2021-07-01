@@ -7,6 +7,7 @@ make_sunburst
 }
 \description{
 Uses the ViruScreen full taxonomy output to create a sunburst
+The default group size is based on the total reads of the maximum hits of a specie
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
