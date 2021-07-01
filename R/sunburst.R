@@ -7,7 +7,7 @@
 #' @import plotme
 #' @import dplyr
 #' @export
-make_sunburst <- function(csv_file, size_col){
+make_sunburst <- function(csv_file, size_col="Total_reads"){
   full_taxonomy <- read.csv(csv_file
                             ,header=T
                             ,stringsAsFactors = FALSE

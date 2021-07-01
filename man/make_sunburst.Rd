@@ -10,12 +10,12 @@ Uses the ViruScreen full taxonomy output to create a sunburst
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-make_sunburst(csv_file=NULL.size_col=NULL)
+make_sunburst(csv_file=NULL.size_col="Total_reads")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{csv_file}{\code{string} path to the full taxonomy csv file.}
-  \item{size_col}{\code{string} name of the column used fot group sizes.}
+  \item{size_col}{\code{string} name of the column used for group sizes.}
 %%     ~~Describe \code{x} here~~
 }
 \details{
