@@ -20,5 +20,5 @@ make_sunburst("path_to_full_taxonomy_csv")
 
 Alternatively, you can choose a different column as group size.
 ``` r
-make_sunburst("path_to_full_taxonomy_csv", "Covered_bases")
+make_sunburst("path_to_full_taxonomy_csv", size_col = "Covered_bases")
 ```
