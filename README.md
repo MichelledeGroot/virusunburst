@@ -17,8 +17,10 @@ With the make_sunburst function, you can create a sunburst that will plot the ta
 ``` r
 make_sunburst("path_to_full_taxonomy_csv")
 ```
+<img src="man/figures/example_reads.jpeg" width="510"/>
 
 Alternatively, you can choose a different column as group size.
 ``` r
 make_sunburst("path_to_full_taxonomy_csv", size_col = "Covered_bases")
 ```
+<img src="man/figures/example_bases.jpeg" width="510"/>
