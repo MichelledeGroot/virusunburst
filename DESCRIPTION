@@ -7,8 +7,12 @@ Maintainer: Michelle de Groot <yourself@somewhere.net>
 Description: Create a sunburst of the full_taxonomy file from the ViruScreen pipeline
 Imports:
     dplyr,
-    plotme
-Remotes: yogevherz/plotme
+    plotme,
+    tidyverse,
+    d3heatmap
+Remotes: 
+    yogevherz/plotme,
+    rstudio/d3heatmap
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
