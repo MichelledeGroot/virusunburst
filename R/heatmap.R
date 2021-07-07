@@ -17,9 +17,9 @@ make_heatmap <- function(csv_file){
   full_taxonomy = full_taxonomy[!duplicated(full_taxonomy$species),]
 
   row.names(full_taxonomy) <- full_taxonomy$species
-  d3heatmap(full_taxonomy, scale = "column", col = 'RdYlGn',
+  suppressWarnings(d3heatmap(full_taxonomy, scale = "column", col = 'RdYlGn',
             main = "Heatmap of all best hits' details", dendrogram = "row") %>%
-    hmAxis("y", title = "species", location = 'right', font.size = 10) %>%
-    hmAxis("x", title = "columns", location = 'bottom', font.size = 12)
+    hmAxis("y", title = "species", location = 'right', font.size = 8) %>%
+    hmAxis("x", title = "columns", location = 'bottom', font.size = 12))
 
 }
