@@ -24,3 +24,9 @@ Alternatively, you can choose a different column as group size.
 make_sunburst("path_to_full_taxonomy_csv", size_col = "Covered_bases")
 ```
 <img src="man/figures/example_bases.jpeg" width="510"/>
+
+Another function is to create a heatmap of your sample. This will illustrate the values of all columns.
+``` r
+make_heatmap("path_to_full_taxonomy_csv")
+```
+<img src="man/figures/example_heatmap.jpeg" width="510"/>
