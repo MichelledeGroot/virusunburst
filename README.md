@@ -7,7 +7,7 @@ The virusunburst package provides functions to easily visualise ViruSreen result
 devtools::install_github("MichelledeGroot/virusunburst", dependencies=TRUE)
 ```
 
-## Usage
+## Usage single sample analysis
 
 ``` r
 library(virusunburst)
@@ -23,10 +23,20 @@ Alternatively, you can choose a different column as group size.
 ``` r
 make_sunburst("path_to_full_taxonomy_csv", size_col = "Covered_bases")
 ```
-<img src="man/figures/example_bases.jpeg" width="510"/>
 
 Another function is to create a heatmap of your sample. This will illustrate the values of all columns.
 ``` r
 make_heatmap("path_to_full_taxonomy_csv")
 ```
 <img src="man/figures/example_heatmap.jpeg" width="510"/>
+
+## Usage multiple sample analysis
+
+To create a stacked bar plot of the total amount of reads per species, you can use the following function:
+``` r
+compare_runs(("path_to_folder")
+```
+The path you provide has to be a folder where the full taxonomy csv files are stored. An example of such a plot is shown below:
+
+<img src="man/figures/example_barplot.jpeg" width="510"/>
+
