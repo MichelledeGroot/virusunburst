@@ -9,7 +9,8 @@ Imports:
     dplyr,
     plotme,
     tidyverse,
-    d3heatmap
+    d3heatmap,
+    RColorBrewer
 Remotes: 
     yogevherz/plotme,
     rstudio/d3heatmap
