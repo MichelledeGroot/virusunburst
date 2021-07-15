@@ -38,5 +38,5 @@ compare_runs(("path_to_folder")
 ```
 The path you provide has to be a folder where the full taxonomy csv files are stored. An example of such a plot is shown below:
 
-<img src="man/figures/example_barplot.jpeg" width="510"/>
+<img src="man/figures/example_barplot.png" width="510"/>
 
