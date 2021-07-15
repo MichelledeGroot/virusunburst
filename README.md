@@ -35,7 +35,7 @@ make_heatmap("path_to_full_taxonomy_csv")
 
 To create a stacked bar plot of the total amount of reads per species, you can use the following function:
 ``` r
-compare_runs(("path_to_folder")
+compare_runs("path_to_folder")
 ```
 The path you provide has to be a folder where the full taxonomy csv files are stored. An example of such a plot is shown below:
 
