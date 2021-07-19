@@ -6,12 +6,12 @@ The virusunburst package provides functions to easily visualise ViruSreen result
 ```r
 devtools::install_github("MichelledeGroot/virusunburst", dependencies=TRUE)
 ```
-
-## Usage single sample analysis
-
 ``` r
 library(virusunburst)
 ```
+
+
+## Usage single sample analysis
 
 With the make_sunburst function, you can create a sunburst that will plot the taxonomies based on the total read count for each best hit.
 The inner circle represents the families, the middle circle represents the genus and the outer circle represents the species.
