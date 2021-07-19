@@ -9,7 +9,7 @@
 #' @import RColorBrewer
 #' @export
 
-compare_runs <- function(csv_folder){
+compare_runs <- function(csv_folder, taxon_level="species", size_col="Total_reads"){
 
   # create a dataset
   filenames <- list.files(csv_folder, pattern="*.csv", full.names=TRUE)
@@ -33,11 +33,12 @@ compare_runs <- function(csv_folder){
   }
 
   # Stacked + percent
-  nb.species <- length(unique(dataset$species))
-  mycolors <- colorRampPalette(brewer.pal(12, "Paired"))(nb.species)
-  ggplot(dataset, aes(fill=species, y=Total_reads, x=run)) +
+  nb <- length(unique(dataset[,taxon_level]))
+  mycolors <- colorRampPalette(brewer.pal(12, "Paired"))(nb)
+  ggplot(dataset, aes(fill=eval(as.name(taxon_level)), y=eval(as.name(size_col)), x=run)) +
     geom_bar(position="fill", stat="identity") +
     scale_fill_manual(values = mycolors) +
     theme(axis.text.x = element_text(angle = 90)) +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1))
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+    labs(fill=taxon_level, y=size_col)
 }
