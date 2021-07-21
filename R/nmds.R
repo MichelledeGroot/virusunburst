@@ -19,22 +19,23 @@ make_nmds <- function(csv_folder,show_species=FALSE){
     if (!exists("dataset")){
       dataset <- read.csv(file, header=TRUE)
       dataset['run']=run
-      dataset = subset(dataset, select = -c(Ref_GC,Minus_reads,Plus_reads,X.ID,family,genus,species) )
+      dataset = subset(dataset, select = -c(Ref_GC,Minus_reads,Plus_reads,Median_fold,X.ID,family,genus,species) )
     }
 
     # if the merged dataset does exist, append to it
     if (exists("dataset")){
       temp_dataset <-read.csv(file, header=TRUE)
       temp_dataset['run']=run
-      temp_dataset = subset(temp_dataset, select = -c(Ref_GC,Minus_reads,Plus_reads,X.ID,family,genus,species) )
+      temp_dataset = subset(temp_dataset, select = -c(Ref_GC,Minus_reads,Plus_reads,Median_fold,X.ID,family,genus,species) )
       dataset<-rbind(dataset, temp_dataset)
       rm(temp_dataset)
     }
   }
 
   #make community matrix - extract columns with abundance information
-  dune = dataset[,1:ncol(dataset)-1]
-  dune.env = dataset[,ncol(dataset)]
+  dune = subset(dataset, select = c(Avg_fold, Length, Covered_percent, Covered_bases,
+                                    Read_GC, Median_fold, Std_Dev, Total_reads) )
+  dune.env = dataset$run
   #turn abundance data frame into a matrix
   dune = as.matrix(dune)
   set.seed(123)
