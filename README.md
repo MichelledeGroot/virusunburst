@@ -37,12 +37,12 @@ To create a stacked bar plot of the total amount of reads per species, you can u
 ``` r
 compare_runs("path_to_folder")
 ```
-With the size_col argument you can change the column used for the bar sizes and the size_col argument changes the taxon level which is either family, genus or species.
+With the size_col argument you can change the column used for the bar sizes and the size_col argument changes the taxon level which is either family, genus or species. The type agrument is default to plot the total amount of reads ('count') but can be changed to 'pct' to plot relative bars from 0 to 100%.
 ``` r
-compare_runs("path_to_folder", taxon_level = "genus", size_col = "Covered_bases")
+compare_runs("path_to_folder", taxon_level = "genus", size_col = "Covered_bases", type="pct")
 ```
 
 The path you provide has to be a folder where the full taxonomy csv files are stored. An example of such a plot is shown below:
 
-<img src="man/figures/example_barplot.png" width="710"/>
+<img src="man/figures/example_barplot.jpeg" width="710"/>
 
