@@ -13,7 +13,6 @@ Imports:
     ggplot2,
     RColorBrewer,
     reshape2,
-    vegan
 Remotes: 
     yogevherz/plotme,
     rstudio/d3heatmap

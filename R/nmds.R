@@ -3,12 +3,13 @@
 #' This function loads multiple ViruScreen output file as a dataframe and
 #' creates a NMDS plot
 #'
+#' This method is currently not exported. uncomment export and add vegan to imports in the DESCRIPTION file to enable.
 #'
 #' @param csv_file Path to the input file
 #' @import vegan
 #' @import dplyr
 #' @import ggplot2
-#' @export
+# @export
 make_nmds <- function(csv_folder,show_species=FALSE){
   filenames <- list.files(csv_folder, pattern="*.csv", full.names=TRUE)
 
