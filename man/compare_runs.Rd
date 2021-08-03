@@ -4,7 +4,12 @@
 \alias{compare_runs}
 \title{Create a stacked bar plot of multiple runs}
 \usage{
-compare_runs(csv_folder)
+compare_runs(
+  csv_folder,
+  taxon_level = "species",
+  size_col = "Total_reads",
+  type = "value"
+)
 }
 \arguments{
 \item{csv_file}{Path to the input folder}

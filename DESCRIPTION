@@ -10,7 +10,8 @@ Imports:
     plotme,
     tidyverse,
     d3heatmap,
-    RColorBrewer
+    RColorBrewer,
+    reshape2
 Remotes: 
     yogevherz/plotme,
     rstudio/d3heatmap
