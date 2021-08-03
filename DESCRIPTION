@@ -13,6 +13,7 @@ Imports:
     ggplot2,
     RColorBrewer,
     reshape2,
+    plotly
 Remotes: 
     yogevherz/plotme,
     rstudio/d3heatmap

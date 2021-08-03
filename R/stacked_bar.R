@@ -5,7 +5,7 @@
 #'
 #'
 #' @param csv_file Path to the input folder
-#' @import ggplot2
+#' @import plotly
 #' @import RColorBrewer
 #' @import reshape2
 #' @export
