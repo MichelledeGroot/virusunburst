@@ -3,7 +3,7 @@
 #' This function loads multiple ViruScreen output file as a dataframe and
 #' creates a NMDS plot
 #'
-#' This method is currently not exported. uncomment export and add vegan to imports in the DESCRIPTION file to enable.
+#' This method is currently not exported. uncomment export to enable.
 #'
 #' @param csv_file Path to the input file
 #' @import vegan

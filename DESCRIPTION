@@ -13,6 +13,7 @@ Imports:
     ggplot2,
     RColorBrewer,
     reshape2,
+    vegan,
     plotly
 Remotes: 
     yogevherz/plotme,
