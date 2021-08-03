@@ -3,7 +3,7 @@ Type: Package
 Title: Create visualisations of ViruScreen results
 Version: 0.1.0
 Author: Michelle de Groot
-Maintainer:  tbd
+Maintainer:  <tbd>
 Description: Create visualizations of the full_taxonomy file from the ViruScreen pipeline
 Imports:
     dplyr,
