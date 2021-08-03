@@ -34,7 +34,7 @@ make_nmds <- function(csv_folder,show_species=FALSE){
 
   #make community matrix - extract columns with abundance information
   dune = subset(dataset, select = c(Avg_fold, Length, Covered_percent, Covered_bases,
-                                    Read_GC, Median_fold, Std_Dev, Total_reads) )
+                                    Read_GC, Std_Dev, Total_reads) )
   dune.env = dataset$run
   #turn abundance data frame into a matrix
   dune = as.matrix(dune)
