@@ -5,6 +5,9 @@
 #'
 #'
 #' @param csv_file Path to the input folder
+#' @param taxon_level taxonomy level to be plotted. Either family, genus or species
+#' @param size_col Column from the csv file that is used for the plot
+#' @param type Default is count to use the values. Change to pct to plot the percentages.
 #' @import plotly
 #' @import RColorBrewer
 #' @import reshape2

@@ -8,6 +8,8 @@ make_sunburst(csv_file, size_col = "Total_reads")
 }
 \arguments{
 \item{csv_file}{Path to the input file}
+
+\item{size_col}{Column from the csv file that is illustrated in the plot}
 }
 \description{
 This function loads a ViruScreen output file as a dataframe and creates a sunburst of the

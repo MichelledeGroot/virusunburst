@@ -4,6 +4,8 @@
 #' taxonomy and total reads
 #'
 #' @param csv_file Path to the input file
+#' @param size_col Column from the csv file that is illustrated in the plot
+#'
 #' @import plotme
 #' @import dplyr
 #' @export

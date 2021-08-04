@@ -12,6 +12,12 @@ compare_runs(
 )
 }
 \arguments{
+\item{taxon_level}{taxonomy level to be plotted. Either family, genus or species}
+
+\item{size_col}{Column from the csv file that is used for the plot}
+
+\item{type}{Default is count to use the values. Change to pct to plot the percentages.}
+
 \item{csv_file}{Path to the input folder}
 }
 \description{
